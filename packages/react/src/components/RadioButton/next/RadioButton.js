@@ -125,7 +125,7 @@ RadioButton.propTypes = {
   /**
    * Specify the value of the `<RadioButton>`
    */
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 export default RadioButton;
