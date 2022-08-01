@@ -10,6 +10,7 @@ import React from 'react';
 import Button from '../Button';
 import { Tooltip } from '../Tooltip/next';
 import { usePrefix } from '../../internal/usePrefix';
+import { ButtonKinds } from '../../prop-types/types';
 import cx from 'classnames';
 
 const IconButton = React.forwardRef(function IconButton(props, ref) {
@@ -85,7 +86,7 @@ IconButton.propTypes = {
   /**
    * Specify the type of button to be used as the base for the IconButton
    */
-  kind: PropTypes.oneOf(['primary', 'secondary', 'ghost', 'tertiary']),
+  kind: PropTypes.oneOf(ButtonKinds),
 
   /**
    * Provide the label to be rendered inside of the Tooltip. The label will use
